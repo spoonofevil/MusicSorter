@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".RealMain">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_launcher"
+        >
+    </ImageView>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose from SD card"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_gravity="center"
+        android:id="@+id/choosSD"
+        android:layout_weight="1"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose from storage"
+        android:layout_gravity="center"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:id="@+id/choosIntern"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:text="Saved genre actions"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show genres"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:id="@+id/opengenrelist"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset save"
+            android:layout_weight="1"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/clearSavedgenre"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/listgenretext"/>
+</LinearLayout>

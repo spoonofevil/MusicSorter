@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:fillViewport="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/sound"
+            android:layout_weight="1"/>
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progress="50"
+            android:max="100"
+            android:id="@+id/volume"
+            android:layout_weight="9"/>
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/sound2"
+            android:layout_weight="1"/>
+
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/image"
+        android:layout_marginTop="60dp"
+        android:id="@+id/albumartview"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/Text_Dir"
+        android:text="emplacement :"
+        android:layout_gravity="center_horizontal" />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/Text_Random_Mucis"
+        android:text="name of the music"
+        android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Info"
+        android:id="@+id/SearchBtn"
+        android:layout_marginTop="15dp"/>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/progressBarMusic"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:11"
+            android:layout_marginStart="35dp"
+            android:id="@+id/elapsTime"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-1:1"
+            android:textAlignment="textEnd"
+            android:layout_marginEnd="35dp"
+            android:id="@+id/remainTime"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <Button
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:background="@drawable/play"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="45dp"
+    android:id="@+id/playbtn"/>
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/next"
+            android:layout_gravity="center_horizontal"
+            android:layout_toEndOf="@+id/playbtn"
+            android:id="@+id/nextMus"/>
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp"
+    android:gravity="center">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm info"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/confirmInfo"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="GoogleSearch"
+        android:id="@+id/searchInfo"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Name"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <AutoCompleteTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Track name"
+            android:id="@+id/TextName"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:id="@+id/clear_Trackname"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="album"
+            android:textSize="20sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <AutoCompleteTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="album name"
+            android:id="@+id/TextAlbum"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:layout_gravity="center_vertical"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/clear"
+            android:id="@+id/clear_album"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Artist"
+            android:textSize="20sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <AutoCompleteTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Artist name"
+                android:id="@+id/ArtistName"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"/>
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Clear"
+                android:id="@+id/clear_ArtistName"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Genre"
+            android:textSize="20sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <AutoCompleteTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Genre"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:id="@+id/Genrechoisitext"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/clear"
+            android:id="@+id/clear_genre"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:id="@+id/layoutliste">
+        <ExpandableListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Musicgenre" />
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addgenrebutton"
+        android:text="Change list of genre"
+        android:layout_margin="10dp"
+        />
+</LinearLayout>
+</ScrollView>

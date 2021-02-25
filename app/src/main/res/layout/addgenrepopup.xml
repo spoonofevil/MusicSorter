@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="30dp">
+<LinearLayout android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:layout_margin="30dp">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Quelle genre a ajouter ?"
+    android:textSize="25sp"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="30dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="30dp"
+        android:layout_gravity="center_horizontal">
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Genre"
+        android:layout_marginStart="20dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="20sp"
+        android:singleLine="true"
+        android:layout_weight="1"
+        android:id="@+id/inputgenretxt"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0"
+        android:id="@+id/btnaddgenre"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Liste des genres :"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:id="@+id/genreaajouter">
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ListeGenreadded"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0"
+        android:id="@+id/confirmaddedgenre"
+        android:layout_marginBottom="50dp"/>
+</LinearLayout>
+</ScrollView>
